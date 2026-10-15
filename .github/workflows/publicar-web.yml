@@ -1,0 +1,29 @@
+name: Publicar web desde ZIP
+
+on:
+  push:
+    paths:
+      - 'sofia_victoria_web_LISTA_PARA_PUBLICAR.zip'
+
+permissions:
+  contents: write
+
+jobs:
+  extraer:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Extraer sitio aprobado
+        run: |
+          unzip -o sofia_victoria_web_LISTA_PARA_PUBLICAR.zip -d .
+          rm -f sofia_victoria_web_LISTA_PARA_PUBLICAR.zip
+
+      - name: Guardar archivos extraídos
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet || git commit -m "Publicar sitio Sofía Victoria"
+          git push
