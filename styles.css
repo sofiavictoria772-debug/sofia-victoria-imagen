@@ -90,3 +90,65 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
     opacity:1;
   }
 }
+
+
+/* Bloqueo reforzado contra modo oscuro automático en móvil */
+:root{
+  color-scheme: only light;
+}
+
+@media(max-width:560px){
+  html,
+  body{
+    background:#f7f4ef !important;
+    color:#171512 !important;
+    color-scheme:only light !important;
+  }
+
+  .header,
+  .nav,
+  .nav-links,
+  .hero,
+  .about-grid,
+  .contact,
+  .statement{
+    background:#f7f4ef !important;
+    color:#171512 !important;
+  }
+
+  .statement{
+    background:#fbf8f4 !important;
+  }
+
+  .hero h1,
+  .hero h2,
+  .hero h3,
+  .hero-copy,
+  .hero-text{
+    color:#171512 !important;
+  }
+
+  .hero h1 span{
+    color:#b59a73 !important;
+  }
+
+  .eyebrow{
+    color:#b59a73 !important;
+  }
+
+  .logo-brand img{
+    height:44px !important;
+    filter:brightness(.22) contrast(1.9) !important;
+    opacity:1 !important;
+  }
+
+  .section-dark{
+    background:#171515 !important;
+    color:#f8f4ee !important;
+  }
+
+  .footer{
+    background:#0e0d0c !important;
+    color:#ddd5cb !important;
+  }
+}
