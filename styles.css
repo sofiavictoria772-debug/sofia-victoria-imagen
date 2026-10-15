@@ -1,4 +1,5 @@
 :root{
+  color-scheme:light;
   --bg:#f7f4ef;
   --paper:#ffffff;
   --ink:#171512;
@@ -74,5 +75,18 @@ h1,h2,h3{font-family:"Cormorant Garamond",serif;line-height:1.06;margin:0}h1{fon
     font-size:9px;
     letter-spacing:.02em;
     box-shadow:0 8px 18px rgba(0,0,0,.16);
+  }
+}
+
+
+/* Preservar la identidad de marca frente a modos oscuros automáticos */
+html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
+  color-scheme:light;
+}
+@media(max-width:560px){
+  .logo-brand img{
+    height:44px;
+    filter:brightness(.25) contrast(1.8);
+    opacity:1;
   }
 }
