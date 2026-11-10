@@ -187,3 +187,9 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
   .header .logo-brand img{height:48px!important}
   .nav{min-height:82px}
 }
+
+/* Logo de cabecera móvil: blanco para conservar contraste incluso en navegador con modo oscuro forzado */
+@media(max-width:900px){
+ .header .logo-brand{background:transparent!important;padding:7px 0!important;border-radius:0!important}
+ .header .logo-brand img{filter:brightness(0) invert(1)!important;opacity:1!important}
+}
