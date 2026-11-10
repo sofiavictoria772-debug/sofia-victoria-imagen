@@ -195,3 +195,10 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
 }
 
 @media(max-width:900px){.header .logo-brand{background:#171512!important;padding:9px 12px!important;border-radius:5px!important}}
+
+/* Marca superior: letras blancas sin recuadro ni imagen oscura */
+.header .logo-brand{background:transparent!important;padding:0!important;border-radius:0!important;box-shadow:none!important}
+.header-wordmark{display:flex;flex-direction:column;align-items:center;gap:1px;color:#fff!important;text-align:center;white-space:nowrap}
+.header-wordmark strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(23px,3vw,31px);line-height:1;font-weight:700;letter-spacing:.015em;color:#fff!important}
+.header-wordmark small{font-family:Montserrat,Arial,sans-serif;font-size:9px;letter-spacing:.12em;font-weight:600;color:#fff!important}
+@media(max-width:900px){.header .logo-brand{background:transparent!important;padding:0!important;border-radius:0!important}}
