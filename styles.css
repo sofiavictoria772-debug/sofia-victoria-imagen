@@ -202,3 +202,12 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
 .header-wordmark strong{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(23px,3vw,31px);line-height:1;font-weight:700;letter-spacing:.015em;color:#fff!important}
 .header-wordmark small{font-family:Montserrat,Arial,sans-serif;font-size:9px;letter-spacing:.12em;font-weight:600;color:#fff!important}
 @media(max-width:900px){.header .logo-brand{background:transparent!important;padding:0!important;border-radius:0!important}}
+
+/* Identidad responsiva: escritorio oscuro sobre claro, móvil blanco sobre oscuro */
+@media(min-width:901px){
+ .header .logo-brand{background:transparent!important;padding:0!important;border-radius:0!important}
+ .header-wordmark,.header-wordmark strong,.header-wordmark small{color:#171512!important}
+}
+@media(max-width:900px){
+ .header-wordmark,.header-wordmark strong,.header-wordmark small{color:#fff!important}
+}
