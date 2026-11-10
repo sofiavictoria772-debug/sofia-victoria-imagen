@@ -167,3 +167,9 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
 .brand-wardrobe{aspect-ratio:auto;overflow:hidden}
 .brand-wardrobe img{width:100%;height:auto;object-fit:contain;object-position:center}
 @media(max-width:560px){.brand-wardrobe{aspect-ratio:auto}.brand-wardrobe img{height:auto;object-fit:contain}}
+
+/* Identidad de cabecera: logo legible y lema en tipografía recta */
+.header .logo-brand img{height:66px;width:auto;filter:brightness(.38) contrast(1.8);opacity:1}
+.hero h1 span{font-style:normal;font-weight:500}
+@media(max-width:900px){.header .logo-brand img{height:54px}}
+@media(max-width:560px){.header .logo-brand img{height:52px !important;filter:brightness(.25) contrast(1.9) !important;opacity:1 !important}}
