@@ -152,3 +152,8 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
     color:#ddd5cb !important;
   }
 }
+
+/* Imagen de Marca: guardarropa panorámico, sin recortes */
+.brand-wardrobe{width:100%;margin:0 auto;border-radius:18px;overflow:hidden;background:#eee6da;box-shadow:0 22px 45px rgba(24,20,18,.08)}
+.brand-wardrobe img{display:block;width:100%;height:auto;object-fit:contain}
+@media(max-width:560px){.brand-wardrobe{border-radius:12px}}
