@@ -193,3 +193,5 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
  .header .logo-brand{background:transparent!important;padding:7px 0!important;border-radius:0!important}
  .header .logo-brand img{filter:brightness(0) invert(1)!important;opacity:1!important}
 }
+
+@media(max-width:900px){.header .logo-brand{background:#171512!important;padding:9px 12px!important;border-radius:5px!important}}
