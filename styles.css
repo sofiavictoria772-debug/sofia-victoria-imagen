@@ -173,3 +173,17 @@ html,body,.header,.nav,.nav-links,.hero,.statement,.contact{
 .hero h1 span{font-style:normal;font-weight:500}
 @media(max-width:900px){.header .logo-brand img{height:54px}}
 @media(max-width:560px){.header .logo-brand img{height:52px !important;filter:brightness(.25) contrast(1.9) !important;opacity:1 !important}}
+
+/* Correcciones de legibilidad y alineación para la versión móvil */
+@media(max-width:900px){
+  .header .logo-brand{display:inline-flex;align-items:center;justify-content:center;background:#f7f4ef!important;padding:7px 11px;border-radius:6px;isolation:isolate}
+  .header .logo-brand img{display:block;height:54px!important;filter:brightness(.2) contrast(1.9)!important;opacity:1!important}
+  .footer-grid{text-align:center!important;justify-items:center}
+  .footer-brand{display:flex;justify-content:center;width:100%}
+  .footer-brand img{display:block;margin:0 auto;height:46px}
+  .footer-grid p:nth-child(2),.footer-grid p:nth-child(3){text-align:center!important}
+}
+@media(max-width:560px){
+  .header .logo-brand img{height:48px!important}
+  .nav{min-height:82px}
+}
